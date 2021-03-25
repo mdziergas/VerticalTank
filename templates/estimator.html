@@ -19,7 +19,15 @@
               </div>
               <button type="submit" class="btn btn-outline-primary m-3">Calculate</button>
             </form>
+
+            {% if total_estimate %}
+    <div class="card m-3 px-3 pt-3">
+    <p>Your total cost estimate is: ${{total_estimate}}</p>
+    
+</div>
+    {% endif %}
     </div>
+    
   </div>
 
 

@@ -4,7 +4,8 @@ body{
     
     
 }
-footer{
-    
-   
-}
+body a, a:link, a:visited {
+    color: #FFFAFA !important;
+    text-decoration: none;
+    background-color: #778899;
+  }
