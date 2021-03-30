@@ -27,7 +27,7 @@ def estimator():
         total_area_sqfeet = total_area /144
         total_material_cost = total_area_sqfeet * material_cost
         total_labor_cost = total_area_sqfeet * labor_cost
-        total_cost_estimate = total_labor_cost+total_material_cost
+        total_cost_estimate = f'{(total_labor_cost+total_material_cost):,.2f}'
 
         return render_template('estimator.html', total_estimate = total_cost_estimate)
     return render_template('estimator.html')
